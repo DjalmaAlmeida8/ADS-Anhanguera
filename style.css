@@ -6,7 +6,6 @@
 }
 
 body{
-    background: #081b29;
     color: #ededed;
 }
 
@@ -24,10 +23,23 @@ body{
 }
 
 .logo{
+    position: relative;
     font-size: 25px;
     color: #ededed;
     text-decoration: none;
     font-weight: 600;
+}
+
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #EC9256;
+    animation: showRight 1s ease forwards;
+    animation-delay: .8s;
 }
 
 .navbar a{
@@ -45,7 +57,9 @@ body{
 
 .home{
     height: 100vh;
-    background: url('home.jpg') no-repeat;
+    background: url('/assets/img/home.png') no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -178,4 +192,26 @@ body{
 
 .home-sci a:hover::before{
     width: 100%;
+}
+
+.home-imgHover{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 700px;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+}
+
+.home-imgHover:hover{
+    background: #081b29;
+    opacity: .8;
+}
+
+/* KEYFRAMES ANIMATION */
+@keyframes showRight{
+    100%{
+        width: 0;
+    }
 }
