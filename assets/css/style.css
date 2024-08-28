@@ -60,7 +60,8 @@ body{
     background-position: center;
     display: flex;
     align-items: center;
-    padding: 0 10%;
+    padding: 10%;
+    margin-top: 20px;
 }
 
 .home-content{
@@ -81,8 +82,8 @@ body{
 
 
 .home-content p{
-    font-size: 18px;
-    margin: 20px 0 40px;
+    font-size: 14px;
+    margin: 10px 0 10px;
 }
 
 .home-content .btn-box{
@@ -142,17 +143,16 @@ body{
 }
 
 .btn-box a:hover:before{
-    
     width: 100%;
 }
 
 .home-sci{
-    position: absolute;
+    position:absolute;
     bottom: 40px;
     width: 120px;
     display: flex;
     justify-content: space-between;
-
+        
 }
 
 .home-sci a{
@@ -235,7 +235,7 @@ button:focus, input:focus, textarea:focus {
 .card_wrapper {
 	background: #081b29;
 	width: 100%;
-	height: 55vh;
+	height: 100vh;
     padding: 10%;
 	display: flex;
 	align-items: center;
